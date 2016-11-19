@@ -90,12 +90,13 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control" } })
+                Si @Html.RadioButtonFor(model => model.Status, true, new { @id = "statusT" })
+                No @Html.RadioButtonFor(model => model.Status, false, new { @checked = "checked", @id = "statusF" })
                 @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" id="fechaMuertePanel">
             @Html.LabelFor(model => model.Fecha_Muerte, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Fecha_Muerte, new { htmlAttributes = new { @class = "form-control" } })
@@ -149,4 +150,19 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+<script>
+    $(document).ready(function () {
+        document.getElementById("fechaMuertePanel").style.display = "none";
+
+            $('#statusT').click(function () {
+                $('#fechaMuertePanel').show("fast");
+            });
+            $('#statusF').click(function () {
+                $('#fechaMuertePanel').hide("fast");
+            });
+           
+        });
+</script>
+
 }
