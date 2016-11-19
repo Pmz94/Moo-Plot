@@ -21,6 +21,7 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 1. Terminar de  hacer los demas (granjas y rancheros creo)
 2. Diseño chilo (Wireframes estan abajo)
 3. Metadatos para todo los demas
+4. Hacer bien las relaciones de la bd (por ejemplo, falta el campo enfermedades en la tabla animales)
 
 ### Wireframes (Erick):
 Solo es como pensamos tener estructurados los datos ya en cada vista. No le muevan a nada si entran al link xfa :punch: :rage:
