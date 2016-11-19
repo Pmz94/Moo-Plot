@@ -17,7 +17,7 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 * no se que mas :joy: rip
 
 ### TODO:
-0. Arreglar la cara del jil y el kris :godmode::mouse2:
+0. Arreglar la cara del jil y el herik :godmode::mouse2:
 1. Terminar de  hacer los demas (granjas y rancheros creo)
 2. Diseño chilo (Wireframes estan abajo)
 3. Metadatos para todo los demas
