@@ -1,0 +1,117 @@
+﻿@model IEnumerable<MooPlot.Models.animale>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.qlero</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Num_Caravana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Especie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Raza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Nac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peso_Nac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IMC_Actual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cod_Signia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Muerte)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imagen__Ruta_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imagen__Foto_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peso_Actual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Num_Caravana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Especie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Raza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_Nac)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peso_Nac)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IMC_Actual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cod_Signia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_Muerte)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imagen__Ruta_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imagen__Foto_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peso_Actual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_Animal }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_Animal }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_Animal })
+        </td>
+    </tr>
+}
+
+</table>

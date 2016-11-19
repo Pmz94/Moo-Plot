@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="efdf506d46cb465f81ad0ce536b1389e" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="ganadoModel.rancho" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ganadoModel.reproduccion" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ganadoModel.usuario" Width="1.5" PointX="2.875" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ganadoModel.animales_enfermos" Width="1.5" PointX="5" PointY="5.125" />
+        <EntityTypeShape EntityType="ganadoModel.enfermedade" Width="1.5" PointX="8.125" PointY="5" />
+        <AssociationConnector Association="ganadoModel.animales_enfermos_ibfk_2" />
+        <EntityTypeShape EntityType="ganadoModel.animale" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="ganadoModel.animales_enfermos_ibfk_1" />
+        <AssociationConnector Association="ganadoModel.reproduccion_ibfk_1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

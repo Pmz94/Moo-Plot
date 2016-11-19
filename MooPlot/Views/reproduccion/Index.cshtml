@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MooPlot.Models.reproduccion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_Padre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Embarazos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Partos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Abortos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Partos_Complicaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.animale.Especie)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_Padre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Embarazos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Partos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Abortos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Partos_Complicaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.animale.Especie)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_Reprod }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_Reprod }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_Reprod })
+        </td>
+    </tr>
+}
+
+</table>

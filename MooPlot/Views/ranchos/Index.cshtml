@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MooPlot.Models.rancho>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre_Rancho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hectareas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dueño)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre_Rancho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ciudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hectareas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dueño)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_Rancho }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_Rancho }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_Rancho })
+        </td>
+    </tr>
+}
+
+</table>

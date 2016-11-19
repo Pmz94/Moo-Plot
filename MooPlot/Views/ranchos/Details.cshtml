@@ -1,0 +1,58 @@
+﻿@model MooPlot.Models.rancho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>rancho</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Rancho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Rancho)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hectareas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hectareas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dueño)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dueño)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Rancho }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
