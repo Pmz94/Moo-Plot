@@ -11,7 +11,7 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 5. push
 
 ### Como hacer que funcione este kkwatazo
-* tener el guorkbench de mysql con el [script](https://drive.google.com/open?id=0Bw80-jlEhlkiMW1pNmFZcXl4Szg) corriendo
+* tener el guorkbench de mysql con el [script](https://drive.google.com/open?id=0Bw80-jlEhlkiMUpDb3NucEt0c2s) corriendo
 * en el NuGet de visual studio bajar dos plugins que se llaman "MySql.Data y MySql.Data.Entity los dos son de la version 6.9.9
 * instalar el [mysql conector](http://cdn.mysql.com//Downloads/Connector-Net/mysql-connector-net-6.9.9.msi) y el [plugin](https://cdn.mysql.com/Downloads/MySQLInstaller/mysql-visualstudio-plugin-1.1.1.msi)
 * no se que mas :joy: rip
