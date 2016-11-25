@@ -17,7 +17,7 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 * no se que mas :joy: rip
 
 ### TODO:
-0. Arreglar la cara del jil y el herik :godmode::mouse2:
+0. Arreglar la cara del jil y el kris :godmode::mouse2:
 1. Terminar de  hacer los demas (granjas y rancheros creo)
 2. Diseño chilo (Wireframes estan abajo)
 3. Metadatos para todo los demas
@@ -26,5 +26,11 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 ### Wireframes (Erick):
 Solo es como pensamos tener estructurados los datos ya en cada vista. No le muevan a nada si entran al link xfa :punch: :rage:
 * [Login](https://wireframe.cc/SyM9yP)
-* [Animales General](https://wireframe.cc/2UdEvJ)
+* [Perfil - Usuario](https://wireframe.cc/NJMcBf)
+* [Animales General (Ya fue cambiada e implementada como vista)](https://wireframe.cc/2UdEvJ)
 * [Animal Individual](https://wireframe.cc/xOKMp9)
+* [Rancho (Si, es la misma que ^^^ pero con info de Rancho)](https://wireframe.cc/xOKMp9)
+* [Reproduccion)](https://wireframe.cc/bU6Si1)
+* [Dashboard (Vista General)](https://wireframe.cc/3NB5cO)
+
+#### Diseño (ya codeado) de vistas [en este repo!](https://github.com/Nifled/MooPlot-views)
