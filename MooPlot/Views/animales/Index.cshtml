@@ -6,112 +6,102 @@
 
 <h2>@ViewBag.qlero</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Num_Caravana)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Especie)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Raza)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Genero)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Fecha_Nac)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Peso_Nac)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IMC_Actual)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Observaciones)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Cod_Signia)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Fecha_Muerte)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Imagen__Ruta_)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Imagen__Foto_)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Peso_Actual)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Celo)
-        </th>
-        <th></th>
-    </tr>
+<div class="vertical-pad"></div>
+<div class="container">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Num_Caravana)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Especie)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Raza)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Genero)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fecha_Nac)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Peso_Nac)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IMC_Actual)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Observaciones)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cod_Signia)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fecha_Muerte)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Imagen__Ruta_)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Imagen__Foto_)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Peso_Actual)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Celo)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID_Animal }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID_Animal }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID_Animal })
-        </td>
-    </tr>
-}
+    <h1>Rancho</h1>
+    <hr>
+    <p>
 
-</table>
+
+        <button class="btn btn-primary" onclick="location.href='@Url.Action("Create", "animales")'"><i class="fa fa-bell"></i> Nuevo animal</button>
+
+
+    </p>
+<div class="row card-container">
+    @foreach (var item in Model)
+    {
+
+
+        <div class="card cardsita col-md-6 col-xs-12">
+
+            <!--Card content-->
+            <div class="card-block">
+
+                <div class="col-md-4">
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="~/img/placeholder.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img class="img-fluid" src="~/img/siniga.png" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+                    <!-- Title -->
+                    <h3 class="card-title text-xs-center">@Html.DisplayFor(modelItem => item.Cod_Signia)</h3>
+
+                </div>
+
+                <div class="col-md-8">
+
+                    <div class="col-md-12 text-xs-center">
+                        <h3>Datos</h3>
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th scope="row"># Caravana</th>
+                                    <td>@Html.DisplayFor(modelItem => item.Num_Caravana)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Peso</th>
+                                    <td>@Html.DisplayFor(modelItem => item.Peso_Actual)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Especie</th>
+                                    <td>@Html.DisplayFor(modelItem => item.Especie)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Raza</th>
+                                    <td>@Html.DisplayFor(modelItem => item.Raza)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Género</th>
+                                    <td>@Html.DisplayFor(modelItem => item.Genero)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="col-md-12 text-xs-center">
+                        <a href="@Url.Action("Details","animales",new { id=item.ID_Animal})" class="btn btn-primary">Resumen Completo</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+            
+
+        </div>
+        
+
+
+    
+
+    }
+    </div>
+    </div>
