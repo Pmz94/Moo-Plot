@@ -200,6 +200,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="animales_enfermosController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -405,6 +406,11 @@
     <Content Include="Views\reproduccion\Edit.cshtml" />
     <Content Include="Views\reproduccion\Index.cshtml" />
     <Content Include="Views\Home\Dashboard.cshtml" />
+    <Content Include="Views\animales_enfermos\Create.cshtml" />
+    <Content Include="Views\animales_enfermos\Delete.cshtml" />
+    <Content Include="Views\animales_enfermos\Details.cshtml" />
+    <Content Include="Views\animales_enfermos\Edit.cshtml" />
+    <Content Include="Views\animales_enfermos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

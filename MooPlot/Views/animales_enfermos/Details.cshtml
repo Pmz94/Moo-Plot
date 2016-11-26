@@ -1,0 +1,42 @@
+﻿@model MooPlot.Models.animales_enfermos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>animales_enfermos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.enfermedade.Nom_Enfermedad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.enfermedade.Nom_Enfermedad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.animale.Especie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.animale.Especie)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_enfermo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
