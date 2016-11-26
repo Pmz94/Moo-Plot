@@ -1,0 +1,59 @@
+/* --------------------- BASE CSS ----------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: #EEEEEE;
+  padding-top: 65px;
+
+  /* Margin bottom by footer height */
+  margin-bottom: 140px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand > img {
+  -webkit-filter: invert(1);
+   filter: invert(1);
+   margin-top: -5px;
+}
+
+.header-text {
+  margin-top: 15px;
+}
+
+.card-container {
+  padding-top: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Fixed height of the footer */
+  height: 140px;
+}
+@media only screen and (max-width:768px) {
+  .footer {
+    position:absolute;
+    width:100%;
+  }
+}
+
+.vertical-pad {
+  height: 100px;
+}
+/* --------------------- /.BASE CSS ----------------------------- */
+
+.cardsita {
+  width: 48%;
+  margin: 0 1% 2% 1%;
+}
+@media only screen and (max-width:768px) {
+  .cardsita {
+    width: 95%;
+    margin: 0 2.5% 3% 2.5%;
+  }
+}
