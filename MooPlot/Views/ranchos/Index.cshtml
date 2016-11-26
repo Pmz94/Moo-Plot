@@ -4,54 +4,169 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+<div class="vertical-pad"></div>
+<div class="container">
+
+    <h1>Rancho</h1>
+    <hr>
+    <p>
+        
+            
+        <button class="btn btn-primary" onclick="location.href='@Url.Action("Create", "ranchos")'"><i class="fa fa-home"></i> Nuevo rancho</button>
+
+        
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nombre_Rancho)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Estado)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Ciudad)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Hectareas)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Dueño)
-        </th>
-        <th></th>
-    </tr>
+    @foreach (var item in Model)
+    {
+        <div class="card-container">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nombre_Rancho)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ciudad)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Hectareas)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Dueño)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID_Rancho }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID_Rancho }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID_Rancho })
-        </td>
-    </tr>
-}
 
-</table>
+
+            <div class="card">
+
+                <!-- First row -->
+                <div class="row">
+
+                    <!--Card content-->
+                    <div class="card-block">
+
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <!--Card image-->
+                            <div class="view overlay hm-white-slight">
+                                <img src="~/img/barn-placeholder.png" alt="" class="img-fluid">
+                                <a href="#">
+                                    <div class="mask"></div>
+                                </a>
+                            </div>
+                            <!--/.Card image-->
+
+                            <div class="col-md-12">
+                                
+                            </div>
+
+                        </div>
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-6">
+
+                            <div class="col-md-12 text-xs-center">
+                                <h1>Datos</h1>
+                            </div>
+                            <div class="col-md-12">
+
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Nombre</th>
+                                            <td>@Html.DisplayFor(modelItem => item.Nombre_Rancho)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Ciudad</th>
+                                            <td>@Html.DisplayFor(modelItem => item.Ciudad)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Estado</th>
+                                            <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Hectáreas</th>
+                                            <td>@Html.DisplayFor(modelItem => item.Hectareas)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Dueño</th>
+                                            <td>@Html.DisplayFor(modelItem => item.Dueño)</td>
+                                        </tr>
+                                    
+                                    </tbody>
+                                </table>
+                                <div class="botones">
+                                    <button class="botones btn btn-info btn-md" onclick="location.href='@Url.Action("Edit", "ranchos", new {id=item.ID_Rancho })'"><i class="fa fa-edit"></i> Editar</button>
+                                    <button class="botones btn btn-danger btn-md" onclick="location.href='@Url.Action("Delete", "ranchos", new { id = item.ID_Rancho })'"><i class="fa fa-trash"></i> Eliminar</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!-- /.First row -->
+
+                <div class="row stat-container">
+
+                    <!-- Stat col -->
+                    <div class="col-md-4">
+
+                        <!--Card-->
+                        <div class="card stat">
+
+                            <!--Card content-->
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title">Quick Stat #1</h4>
+                                <!--Text-->
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <!--/.Card content-->
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!-- /.Stat col -->
+                    <!-- Stat col -->
+                    <div class="col-md-4">
+
+                        <!--Card-->
+                        <div class="card stat">
+
+                            <!--Card content-->
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title">Quick Stat #2</h4>
+                                <!--Text-->
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <!--/.Card content-->
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!-- /.Stat col -->
+                    <!-- Stat col -->
+                    <div class="col-md-4">
+
+                        <!--Card-->
+                        <div class="card stat">
+
+                            <!--Card content-->
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title">Quick Stat #3</h4>
+                                <!--Text-->
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <!--/.Card content-->
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!-- /.Stat col -->
+
+                </div>
+
+            </div>
+
+
+        </div>
+        
+    }
+    
+    </div>
+<div class="vertical-pad"></div>

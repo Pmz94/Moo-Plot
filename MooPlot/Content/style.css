@@ -57,3 +57,32 @@ body {
     margin: 0 2.5% 3% 2.5%;
   }
 }
+.stat-container {
+    margin: 25px 0 25px 0;
+}
+.stat {
+  margin: 0 30px 30px 30px;
+}
+
+/* ------------------    Para centrar la foto hdp del siniga    ------------------ */
+.siniga {
+  margin-top: 90px;
+}
+@media only screen and (max-width:992px) {.siniga {margin-top: 70px;}}
+@media only screen and (max-width:768px) {.siniga {margin-top: 50px;}}
+@media only screen and (max-width:480px) {.siniga {margin-top: 10px;}}
+/* ------------------    /.Para centrar la foto hdp del siniga    ------------------ */
+
+
+.stat-container {
+    margin: 25px 0 25px 0;
+}
+.stat {
+  margin: 0 30px 30px 30px;
+}
+ .botones{
+     display: inline;
+     min-width: 120px;
+     max-width:120px;
+    
+ }

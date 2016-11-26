@@ -282,6 +282,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\baby.jpg" />
     <Content Include="img\baby2.jpg" />
+    <Content Include="img\barn-placeholder.png" />
     <Content Include="img\barnsy.jpg" />
     <Content Include="img\cows.jpg" />
     <Content Include="img\moocow.png" />
