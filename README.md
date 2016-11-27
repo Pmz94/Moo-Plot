@@ -17,9 +17,9 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 * no se que mas :joy: rip
 
 ### TODO:
-0. Arreglar la cara del jil y el kris :godmode::mouse2:
-1. Landing Page (Erick)
-2. Arreglar el navbar con codigo
+0. Arreglar la cara del kris :godmode::mouse2: :shipit:
+1. Landing Page (Erick), 404page
+2. Arreglar el navbar con codigo, arreglar botones de las views(edit/delete)
 3. Roles de Usuario
 5. Testear un rato
 6. Finishing design touches
