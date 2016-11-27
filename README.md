@@ -18,10 +18,12 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 
 ### TODO:
 0. Arreglar la cara del jil y el kris :godmode::mouse2:
-1. Terminar de  hacer los demas (granjas y rancheros creo)
-2. Diseño chilo (Wireframes estan abajo)
-3. Metadatos para todo los demas
-4. Hacer bien las relaciones de la bd (por ejemplo, falta el campo enfermedades en la tabla animales)
+1. Landing Page (Erick)
+2. Arreglar el navbar con codigo
+3. Roles de Usuario
+5. Testear un rato
+6. Finishing design touches
+7. Deploy
 
 ### Wireframes (Erick):
 Solo es como pensamos tener estructurados los datos ya en cada vista. No le muevan a nada si entran al link xfa :punch: :rage:
