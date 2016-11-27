@@ -7,7 +7,8 @@ using System.Web;
 namespace MooPlot.Models
 {
     public class AnimalesMeta
-    {
+    { 
+        
         [Display(Name = "Numero de caravana")]
         public int Num_Caravana { get; set; }
         public string Especie { get; set; }
@@ -33,5 +34,6 @@ namespace MooPlot.Models
         [Display(Name = "Peso actual")]
         public float Peso_Actual { get; set; }
         public Nullable<System.DateTime> Celo { get; set; }
+        
     }
 }

@@ -4,134 +4,225 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>animale</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Num_Caravana)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Num_Caravana)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Especie)
-        </dt>
+<div class="vertical-pad"></div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Especie)
-        </dd>
+<!--Main layout-->
+<div class="container">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Raza)
-        </dt>
+    <h1>Ganado</h1>
+    <hr>
 
-        <dd>
-            @Html.DisplayFor(model => model.Raza)
-        </dd>
+    <!-- Card container -->
+    <div class="card-container">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Genero)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Genero)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Fecha_Nac)
-        </dt>
+        <div class="card">
 
-        <dd>
-            @Html.DisplayFor(model => model.Fecha_Nac)
-        </dd>
+            <!-- First row -->
+            <div class="row">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Peso_Nac)
-        </dt>
+                <!--Card content-->
+                <div class="card-block">
 
-        <dd>
-            @Html.DisplayFor(model => model.Peso_Nac)
-        </dd>
+                    <div class="col-md-4">
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="~/img/placeholder.png" alt="" class="img-fluid">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
 
-        <dt>
-            @Html.DisplayNameFor(model => model.IMC_Actual)
-        </dt>
+                        <div class="col-md-12">
+                            
+                        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.IMC_Actual)
-        </dd>
+                    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Observaciones)
-        </dt>
+                    <div class="col-md-2 siniga">
 
-        <dd>
-            @Html.DisplayFor(model => model.Observaciones)
-        </dd>
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img class="img-fluid" src="~/img/siniga.png" alt="">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+                        <!--Title-->
+                        <h3 class="card-title text-xs-center">@Html.DisplayFor(model => model.Cod_Signia)</h3>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Cod_Signia)
-        </dt>
+                    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Cod_Signia)
-        </dd>
+                    <div class="col-md-6">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
+                        <div class="col-md-12 text-xs-center">
+                            <h1>Datos</h1>
+                        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
+                        <div class="col-md-6">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Fecha_Muerte)
-        </dt>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"># Caravana</th>
+                                        <td>@Html.DisplayFor(model => model.Num_Caravana)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Peso</th>
+                                        <td>@Html.DisplayFor(model => model.Peso_Nac)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Especie</th>
+                                        <td>@Html.DisplayFor(model => model.Especie)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Raza</th>
+                                        <td>@Html.DisplayFor(model => model.Raza)</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
 
-        <dd>
-            @Html.DisplayFor(model => model.Fecha_Muerte)
-        </dd>
+                        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Imagen__Ruta_)
-        </dt>
+                        <div class="col-md-6">
 
-        <dd>
-            @Html.DisplayFor(model => model.Imagen__Ruta_)
-        </dd>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Peso de Nac.</th>
+                                        <td>@Html.DisplayFor(model => model.Peso_Nac)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Peso</th>
+                                        <td>@Html.DisplayFor(model => model.Peso_Actual)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Muerto:</th>
+                                        <td>@Html.DisplayFor(model => model.Status)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Género</th>
+                                        <td>@Html.DisplayFor(model => model.Genero)</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Imagen__Foto_)
-        </dt>
+                        </div>
+                        <div class="col-md-12">
 
-        <dd>
-            @Html.DisplayFor(model => model.Imagen__Foto_)
-        </dd>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Fecha de nacimiento</th>
+                                        <td>@Html.DisplayFor(model => model.Fecha_Nac)</td>
+                                    </tr>
+                                    
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Peso_Actual)
-        </dt>
+                                </tbody>
+                            </table>
 
-        <dd>
-            @Html.DisplayFor(model => model.Peso_Actual)
-        </dd>
+                        </div>
+                       
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Celo)
-        </dt>
+                    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Celo)
-        </dd>
+                </div>
+                <!--/.Card content-->
 
-    </dl>
+            </div>
+            <!-- /.First row -->
+
+            <div class="row stat-container">
+
+                <!-- Stat col -->
+                <div class="col-md-4">
+
+                    <!--Card-->
+                    <div class="card stat">
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Quick Stat #1</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- /.Stat col -->
+                <!-- Stat col -->
+                <div class="col-md-4">
+
+                    <!--Card-->
+                    <div class="card stat">
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Quick Stat #2</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- /.Stat col -->
+                <!-- Stat col -->
+                <div class="col-md-4">
+
+                    <!--Card-->
+                    <div class="card stat">
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Quick Stat #3</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- /.Stat col -->
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- /.Card container -->
+
+
+
+
+
+
+
+
 </div>
+<!--/.Main layout-->
+
+<div class="vertical-pad"></div>
+
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Animal }) |
     @Html.ActionLink("Back to List", "Index")
