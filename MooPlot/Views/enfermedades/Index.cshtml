@@ -4,10 +4,12 @@
     ViewBag.Title = "Index";
 }
 
+<div class="vertical-pad"></div>
+
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button class="btn btn-primary" onclick="location.href='@Url.Action("Create", "enfermedades")'"><i class="fa fa-plus"></i> Nueva Enfermedad</button>
 </p>
 <table class="table">
     <tr>
@@ -23,11 +25,13 @@
             @Html.DisplayFor(modelItem => item.Nom_Enfermedad)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID_enfermedad }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID_enfermedad }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID_enfermedad })
+            <button class="btn btn-info btn-md" onclick="location.href='@Url.Action("Edit", "enfermedades", new { id=item.ID_enfermedad })'"><i class="fa fa-edit"></i> Editar</button>
+            <button class="btn btn-info btn-md" onclick="location.href='@Url.Action("Details", "enfermedades", new { id=item.ID_enfermedad })'"><i class="fa fa-newspaper-o"></i> Detalles</button>
+            <button class="btn btn-danger btn-md" onclick="location.href='@Url.Action("Delete", "enfermedades", new { id=item.ID_enfermedad })'"><i class="fa fa-trash"></i> Eliminar</button>
         </td>
     </tr>
 }
 
 </table>
+
+<div class="vertical-pad"></div>

@@ -24,27 +24,27 @@
             <!--Collapse content-->
             <div class="collapse navbar-toggleable-xs" id="collapseEx2">
                 <!-- Brand -->
-                <a class="navbar-brand" href="../Home/Dashboard">
+                <a class="navbar-brand" href="@Url.Action("Dashboard", "Home")">
                     <img src="~/img/mooplot.png" width="120" height="25" alt="">
                 </a>
                 <!--Links-->
                 <ul class="nav navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link" href="../Home/Dashboard">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="@Url.Action("Dashboard", "Home")">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../animales/">Animales</a>
+                        <a class="nav-link" href="@Url.Action("Index", "animales")">Animales</a>
                     </li>
-                    
+
                     <li class="nav-item">
-                        <a class="nav-link" href="../ranchos/">Ranchos</a>
+                        <a class="nav-link" href="@Url.Action("Index", "ranchos")">Ranchos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../animales_enfermos/">Enfermedades</a>
+                        <a class="nav-link" href="@Url.Action("Index", "animales_enfermos")">Enfermedades</a>
                     </li>
                 </ul>
                 <!--login berga form-->
-                    
+
 
                 <ul class="nav navbar-nav float-xs-right">
                     <li class="nav-item ">

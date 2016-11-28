@@ -105,7 +105,23 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Muerto:</th>
-                                        <td>@Html.DisplayFor(model => model.Status)</td>
+                                        <td>
+                                            @if (Model.Status == true)
+                                            {
+                                                if (Model.Status == true)
+                                                {
+                                                    <i class="fa fa-check-circle text-success text-center"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-times-circle text-danger text-center"></i>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <i class="fa fa-times-circle text-danger text-center"></i>
+                                            }
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Género</th>
@@ -221,9 +237,10 @@
 </div>
 <!--/.Main layout-->
 
-<div class="vertical-pad"></div>
-
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Animal }) |
-    @Html.ActionLink("Back to List", "Index")
+    <a class="btn btn-default " onclick="location.href='@Url.Action("Index", "animales")'"><i class="fa fa-arrow-left"></i> Regresar</a>
+    <button class="btn btn-info btn-md" onclick="location.href='@Url.Action("Edit", "animales", new { id = Model.ID_Animal })'"><i class="fa fa-edit"></i> Editar</button>
+    <button class="btn btn-danger btn-md" onclick="location.href='@Url.Action("Delete", "animales", new { id = Model.ID_Animal })'"><i class="fa fa-trash"></i> Eliminar</button>
 </p>
+
+<div class="vertical-pad"></div>

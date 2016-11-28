@@ -25,6 +25,8 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 6. Finishing design touches
 7. Deploy
 
+berga, si hicimos todo estooooooooooooooooooooo.
+
 ### Wireframes (Erick):
 Solo es como pensamos tener estructurados los datos ya en cada vista. No le muevan a nada si entran al link xfa :punch: :rage:
 * [Login](https://wireframe.cc/SyM9yP)

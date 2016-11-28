@@ -53,6 +53,7 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Rancho }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Rancho })
+    <button class="botones btn btn-info btn-md" onclick="location.href='@Url.Action("Edit", "ranchos")'"><i class="fa fa-edit"></i> Editar</button>
+    <a class="btn btn-default " onclick="location.href='@Url.Action("Index", "ranchos")'"><i class="fa fa-arrow-left"></i> Regresar</a>
 </p>
