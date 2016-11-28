@@ -274,6 +274,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\homeStyle.css" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
     <Content Include="Content\style.css" />
@@ -284,8 +285,15 @@
     <Content Include="img\baby.jpg" />
     <Content Include="img\baby2.jpg" />
     <Content Include="img\barn-placeholder.png" />
+    <Content Include="img\barn2.jpg" />
     <Content Include="img\barnsy.jpg" />
+    <Content Include="img\cattle1.jpg" />
+    <Content Include="img\cattle3.jpg" />
     <Content Include="img\cows.jpg" />
+    <Content Include="img\cris.png" />
+    <Content Include="img\devices.png" />
+    <Content Include="img\erick.jpg" />
+    <Content Include="img\gil.jpg" />
     <Content Include="img\moocow.png" />
     <Content Include="img\mooplot.png" />
     <Content Include="img\placeholder.png" />
