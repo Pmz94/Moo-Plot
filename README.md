@@ -1,8 +1,8 @@
-# mooPlot
-## licencia shila no mi lo roben xdxd
+# MooPlot
+## licencia chila no me lo roben
 
 ## Workflow
-Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero seguir estos lindos pasos:
+Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero seguir estos pasos:
 
 1. pull
 2. -cambios hechos-
@@ -10,10 +10,10 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 4. pull otra vez
 5. push
 
-### Como hacer que funcione este kkwatazo
-* tener el guorkbench de mysql con el [script](https://drive.google.com/open?id=0Bw80-jlEhlkiMUpDb3NucEt0c2s) corriendo
-* en el NuGet de visual studio bajar dos plugins que se llaman "MySql.Data y MySql.Data.Entity los dos son de la version 6.9.9
-* instalar el [mysql conector](http://cdn.mysql.com//Downloads/Connector-Net/mysql-connector-net-6.9.9.msi) y el [plugin](https://cdn.mysql.com/Downloads/MySQLInstaller/mysql-visualstudio-plugin-1.1.1.msi)
+### Como hacer que funcione
+* Tener el Workbench de MySQL con el [script](https://drive.google.com/open?id=0Bw80-jlEhlkiMUpDb3NucEt0c2s) corriendo
+* En el NuGet de Visual Studio bajar dos plugins que se llaman "MySql.Data y MySql.Data.Entity los dos son de la version 6.9.9
+* Instalar el [mysql conector](http://cdn.mysql.com//Downloads/Connector-Net/mysql-connector-net-6.9.9.msi) y el [plugin](https://cdn.mysql.com/Downloads/MySQLInstaller/mysql-visualstudio-plugin-1.1.1.msi)
 * no se que mas :joy: rip
 
 ### TODO:
@@ -25,8 +25,6 @@ Por si no quieren hacer otro branch y luego mergear pueden pushear directo pero 
 6. Finishing design touches
 7. Deploy
 
-berga, si hicimos todo estooooooooooooooooooooo.
-
 ### Wireframes (Erick):
 Solo es como pensamos tener estructurados los datos ya en cada vista. No le muevan a nada si entran al link xfa :punch: :rage:
 * [Login](https://wireframe.cc/SyM9yP)
@@ -37,4 +35,4 @@ Solo es como pensamos tener estructurados los datos ya en cada vista. No le muev
 * [Reproduccion)](https://wireframe.cc/bU6Si1)
 * [Dashboard (Vista General)](https://wireframe.cc/3NB5cO)
 
-#### Diseño (ya codeado) de vistas [en este repo!](https://github.com/Nifled/MooPlot-views)
+#### Diseño (ya codeado) de vistas [en este repo](https://github.com/Pmz94/MooPlot-views)
